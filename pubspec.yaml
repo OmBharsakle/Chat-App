@@ -36,6 +36,22 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   firebase_core: ^3.4.0
+  device_preview: ^1.2.0
+  swipeable_button_view: ^0.0.2
+  equal_space: ^0.0.8
+  icons_plus: ^5.0.0
+  get: ^4.6.6
+  google_fonts: ^6.2.1
+  flutter_screenutil: ^5.9.3
+  firebase_auth: ^5.2.1
+  google_sign_in: ^6.2.1
+  cloud_firestore: ^5.4.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+  firebase_storage: ^12.3.2
+  image_picker: ^1.1.2
+  skeletonizer: any
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +63,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,6 +81,9 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
+    - assets/background.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -87,5 +108,69 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: Assets/Fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: Assets/Fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: Assets/Fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: Assets/Fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: Assets/Fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: f1
+      fonts:
+        - asset: 'assets/Fonts/f1.ttf'
+    - family: f2
+      fonts:
+        - asset: 'assets/Fonts/f2.ttf'
+    - family: f3
+      fonts:
+        - asset: 'assets/Fonts/f3.ttf'
+          style: italic
+    - family: f4
+      fonts:
+        - asset: 'assets/Fonts/f4.ttf'
+    - family: f5
+      fonts:
+        - asset: 'assets/Fonts/f5.ttf'
+    - family: f6
+      fonts:
+        - asset: 'assets/Fonts/f6.ttf'
+    - family: f7
+      fonts:
+        - asset: 'assets/Fonts/f7.ttf'
+    - family: f8
+      fonts:
+        - asset: 'assets/Fonts/f8.ttf'
+    - family: f9
+      fonts:
+        - asset: 'assets/Fonts/f9.ttf'
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.webp"
+  min_sdk_android: 21
+
+
+flutter_native_splash:
+  android: true
+  ios: true
+  color: "#ffffff"
+  color_dark: "#121212"
+  image: assets/logo.jpg
+
+  android_12:
+    color: "#ffffff"
+    color_dark: "#121212"
+    image: assets/logo.jpg
+    fullscreen: true
+
+
+  web: false
